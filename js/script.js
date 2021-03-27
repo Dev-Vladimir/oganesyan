@@ -22,7 +22,7 @@ function showSubMenu(e){
 		let back = document.createElement('span');
 
 		back.classList.add('back');
-		back.innerHTML = 'Назад';
+		back.innerHTML = '❮ Назад';
 		back.addEventListener('click', showParentUl);
 		menu.prepend(back);
 		parentUl = parent
