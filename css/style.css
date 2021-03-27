@@ -332,7 +332,7 @@ ul.current>li{
 
 .footer{
 	background: #383e4a;
-	height: 300px;
+	height: auto;
 	padding: 40px;
 }
 .footer>.d-flex{
