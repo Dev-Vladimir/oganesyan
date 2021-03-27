@@ -130,7 +130,7 @@ h2{
 	top: 0; right: -100%;
 	height: 100vh; width: 100%;
 	text-align: right;
-	padding-top: 20vh;
+	padding-top: 120px;
 	overflow: hidden;
 	transition: var(--custom-transition)
 }
@@ -150,20 +150,9 @@ h2{
 	transition-delay: 0
 }
 .main-screen-menu ul{
-	transition: var(--custom-transition);
+	transition: all .6s;
 }
-.main-screen-menu>.back{
-	width: 50px; height: 50px;
-	margin-right: var(--padding-from-edges);
-	font-size: 32px;
-	color: #fff;
-	transition: var(--custom-transition)
-}
-.main-screen-menu>.back:hover{
-	width: 70px;
-	padding-right: 20px;
-	background: var(--color-yellow);
-}
+
 .main-screen-menu>ul>li{
 	margin-top: 20px;
 }
@@ -201,9 +190,36 @@ h2{
 .main-screen-menu li>ul{
 	display: none;
 }
+ul.current{
+	position: absolute;
+	top: 120px; right: 0;
+	transform: translateX(100%);
+	transition: var(--custom-transition);
+}
+ul.current>li{
+	list-style: none
+}
+.main-screen-menu .back{
+	margin-right: var(--padding-from-edges);
+	font-size: 32px;
+	color: #fff;
+	transition: var(--custom-transition);
+	cursor: pointer;
+}
+.main-screen-menu .back>span{
+	margin-right: 20px;
+	transition: margin-right .3s
+}
+.main-screen-menu .back:hover{
+	padding-right: 20px;
+	color: var(--color-yellow);
+}
+.main-screen-menu .back:hover>span{
+	margin-right: 40px;
+}
 
 .about-competition{
-	padding: 40px 0;
+	padding: 80px 0 0;
 }
 .about-competition>.about-photos, .about-competition>.about-text{
 	flex-basis: 50%;
@@ -340,12 +356,14 @@ h2{
 }
 .bottom-menu>ul{
 	display: flex;
+	
 }
 .bottom-menu>ul>li{
 	margin-right: 20px;
 }
 .bottom-menu>ul>li>ul{
 	margin-top: 20px;
+	max-width: 90%
 }
 .social{
 	justify-content: flex-end;
