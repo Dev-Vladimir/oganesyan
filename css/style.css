@@ -200,6 +200,7 @@ ul.current>li{
 	list-style: none
 }
 .main-screen-menu .back{
+	display: inline;
 	margin-right: var(--padding-from-edges);
 	font-size: 32px;
 	color: #fff;
@@ -212,7 +213,7 @@ ul.current>li{
 }
 .main-screen-menu .back:hover{
 	padding-right: 20px;
-	color: var(--color-yellow);
+	/*color: var(--color-yellow);*/
 }
 .main-screen-menu .back:hover>span{
 	margin-right: 40px;
@@ -405,6 +406,61 @@ ul.current>li{
 	color: var(--color-yellow);
 }
 
+@media screen and (min-width : 1300px){
+	body{
+		font-size: 28px;
+	}
+	h2{
+		font-size: 72px;
+	}
+	.button{
+		height: auto;
+		padding: 15px 40px;
+		font-size: 48px;
+	}
+	.main-screen .main-screen-title>h1{
+		font-size: 72px;
+		margin-top: 40px;
+	}
+	.main-screen-menu{
+		padding-top: 240px;
+	}
+	.main-screen-menu>ul>li{
+		margin-top: 40px;
+	}
+	.main-screen-menu>ul>li>a{
+		font-size: 68px;
+	}
+	ul.current{
+		top: 240px;
+	}
+	.main-screen-menu .back{
+		font-size: 56px;
+	}
+	.about-photo-item{
+		height: 640px;
+	}
+	.about-photo-item>.title{
+		font-size: 56px;
+		width: 150%;
+	}
+	.partners-item>.title{
+		font-size: 48px;
+	}
+	.bottom-menu li>a{
+		font-size: 36px;
+	}
+	.bottom-menu>ul>li>ul a{
+		font-size: 24px;
+	}
+	.social>a{
+		height: 80px; width: 80px;
+		font-size: 36px;
+	}
+	.author{
+		font-size: 32px;
+	}
+}
 @media screen and (max-width : 992px){
 	body{
 		background: #fff;
