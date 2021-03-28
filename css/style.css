@@ -406,7 +406,7 @@ ul.current>li{
 	color: var(--color-yellow);
 }
 
-@media screen and (min-width : 1300px){
+@media screen and (min-width : 1400px){
 	body{
 		font-size: 28px;
 	}
