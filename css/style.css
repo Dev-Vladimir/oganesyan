@@ -465,14 +465,29 @@ ul.current>li{
 	body{
 		background: #fff;
 	}
+	h2{
+		font-size: 42px;
+	}
 	.main-screen .main-screen-title>h1{
-		font-size: 36px;
+		font-size: 32px;
+		max-width: 100%;
+		margin-top: 20px;
+		line-height: 46px;
 	}
 	:root {
 	  --padding-from-edges: 20px;
 	}
 	.main-screen-menu{
 		background: #899b9b;
+		padding-top: 160px;
+	}
+	.main-screen .main-screen-title>hr,
+	.about-competition .section-heading>hr,
+	.partners>.section-title>hr{
+		height: 10px;
+	}
+	ul.current{
+		top: 160px;
 	}
 	.main-screen-menu>ul>li>a{
 		font-size: 32px;
@@ -510,11 +525,17 @@ ul.current>li{
 	.partners>.section-title{
 		width: 100%;
 	}
+	.partners>.section-title>h2{
+		margin-right: var(--padding-from-edges);
+	}
 	.partners>.items{
 		flex-wrap: wrap;
 	}
 	.partners-item{
 		flex-basis: 100%
+	}
+	.partners-item>.title{
+		font-size: 24px;
 	}
 	.footer{
 		height: auto;
@@ -522,6 +543,9 @@ ul.current>li{
 	.footer>.d-flex{
 		flex-wrap: wrap;
 		justify-content: center;
+	}
+	.bottom-menu{
+		flex-basis: 100%
 	}
 	.bottom-menu>ul{
 		display: block;
@@ -533,6 +557,7 @@ ul.current>li{
 	.bottom-menu>ul>li>ul{
 		margin-top: 0;
 		margin-bottom: 20px;
+		max-width: 100%
 	}
 	.social{
 		margin-top: 40px;
